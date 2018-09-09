@@ -1,0 +1,20 @@
+<header id="site-header">
+  <div class="container">
+    <nav>
+      <a [routerLink]="['/home']">Home</a>
+      <a [routerLink]="['/about']">About</a>
+    </nav>
+  </div>
+</header>
+
+<div id="site-main" class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<app-recent-heroes></app-recent-heroes>
+
+<footer id="site-footer">
+  <div class="container">
+    <p> &copy; Ironhack 2018</p>
+  </div>
+</footer>
